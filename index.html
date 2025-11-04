@@ -1,90 +1,219 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section-title {
-            color: #3498db;
-            margin-bottom: 2px;
-        }
-        .contact-info {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 50px;
-            margin-bottom: 20px;
-        }
-        .experience-item, .education-item {
-            margin-bottom: 15px;
-            padding-left: 20px;
-            border-left: 3px solid #3498db;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .section-title {
+        color: #3498db;
+        margin-bottom: 2px;
+      }
+      .contact-info {
+        background-color: #f8f9fa;
+        padding: 12px 15px;
+        border-radius: 120px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        max-width: 600px;
+      }
+      .contact-details {
+        flex: 1;
+        padding-left: 15px;
+      }
+      .contact-details p {
+        margin: 5px 0;
+        font-size: 0.95em;
+      }
+      .profile-image {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #3498db;
+        flex-shrink: 0;
+      }
+      .experience-item,
+      .education-item {
+        margin-bottom: 15px;
+        padding-left: 20px;
+        border-left: 3px solid #3498db;
+      }
+      .edu-skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+      .skills-section {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .skills-list {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+      }
+      .skills-list li {
+        padding: 8px 0;
+        border-bottom: 1px solid #e0e0e0;
+        color: #2c3e50;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Nguyễn Hoàng Hiếu <br/>
-            Automation Quality Control Engineer
-        </h1>
-        
-        <div class="section contact-info">
-            <h2 class="section-title">Contact Information</h2>
-            <p>📱 Phone: 0933258580</p>
-            <p>📧 Email: hieu.contact.8321@gmail.com</p>
+      <h1>
+        Nguyễn Hoàng Hiếu <br />
+        Automation Quality Control Engineer
+      </h1>
+
+      <div class="section contact-info">
+        <div class="contact-details">
+          <h2 class="section-title">Contact Information</h2>
+          <p>📱 Phone: 0933258580</p>
+          <p>📧 Email: hieu.contact.8321@gmail.com</p>
+        </div>
+        <img
+          src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-1/495556805_2390927471284276_1961596084516888653_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=k3-ZLS9u694Q7kNvwGSm8Cd&_nc_oc=AdmfObv2lYzUmSOC53nCu5jDJTOghQTYrIlxEkN-v-xWMtkpVEqcLgkklcRyZk7bJqA&_nc_zt=24&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=PZJI203mluDjFV-8WXpg5w&oh=00_AfiGzE9pmi-UWD1AzB8rDdxXWBxUuMGlm77MtVd4AXvrKg&oe=69100D90"
+          alt="Profile Photo"
+          class="profile-image"
+        />
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-item">
+          <h3>Half-Auto Quality Control Engineer</h3>
+          <strong>HRS Group | 11/2023 - Present</strong>
+          <p>Web application testing</p>
+          <ul>
+            <li>Main QC for the team's core project.</li>
+            <li>
+              Build and maintenance the E2E Automation Testing process for the
+              web application.
+            </li>
+            <li>
+              Responsibility for the overall quality of the product including
+              test case design, execution, and reporting.
+            </li>
+            <li>
+              Collaboration with cross-functional teams to ensure quality
+              throughout the software development lifecycle.
+            </li>
+            <li>
+              Agile methodologies to deliver high-quality software in a
+              fast-paced environment.
+            </li>
+            <li>
+              Participation in demo presentations to showcase testing progress
+              and results to stakeholders.
+            </li>
+            <li>
+              Apply AI generated manual test cases, analyze testing data and automation testing implementation.
+            </li>
+          </ul>
+          <p>Mobile application testing</p>
+          <ul>
+            <li>
+              Ensure the quality of mobile applications through comprehensive
+              testing strategies.
+            </li>
+            <li>
+              Collaborating with developers to ensure seamless integration of
+              testing processes within the mobile app development lifecycle.
+            </li>
+            <li>
+              Apply AI to support testing tasks and improve testing efficiency.
+            </li>
+          </ul>
+          <strong>Studying process at FPT Software Academy | Before 11/2023</strong>
+          <ul>
+            <li>
+              Leading a small QC team to find defects and improve testing
+              processes for the whole team
+            </li>
+            <li>
+              Provide reports about the manual testing process and testing
+              results to relating students
+            </li>
+            <li>
+              Listing the issues found during testing and collaborating with
+              developers to resolve them.
+            </li>
+          </ul>
         </div>
 
-        <div class="section">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-item">
-                <h3>Half-Auto Quality Control Engineer</h3>
-                <p>HRS Group | 11/2023 - Present</p>
-                <ul>
-                    <li>Key responsibility or achievement 1</li>
-                    <li>Key responsibility or achievement 2</li>
-                    <li>Key responsibility or achievement 3</li>
-                </ul>
-            </div>
-
-        <div class="section">
+        <div class="edu-skills-container">
+          <div class="section">
             <h2 class="section-title">Education & Certifications</h2>
+
             <div class="education-item">
-                <h3>Degree Name</h3>
-                <p>University Name | Graduation Year</p>
-                <p>• GPA: X.XX</p>
+              <h3>Certifications</h3>
+              <ul>
+                <li>Manual QC/Tester - FPT Software Academy</li>
+                <li>Automation Testing - TestingVN</li>
+                <li>Bachelor of Economics - Open University</li>
+              </ul>
             </div>
+
             <div class="education-item">
-                <h3>Certifications</h3>
-                <ul>
-                    <li>Certification 1</li>
-                    <li>Certification 2</li>
-                    <li>Certification 3</li>
-                </ul>
+              <h3>Hobbies</h3>
+              <ul>
+                <li>
+                  I really love creating small projects in my free time. The
+                  projects don’t need to be perfect, but I also enjoy learning
+                  new technologies and improving my skills.
+                </li>
+                <li>
+                  Learning more and more skills relating to AI and automation
+                  testing to become a proficient Automation Tester.
+                </li>
+              </ul>
             </div>
+          </div>
+
+          <div class="skills-section">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills-list">
+              <li>Black Box Testing</li>
+              <li>E2E Automation Testing</li>
+              <li>Programming Languages: Javascript/Typescript</li>
+              <li>Familiar with WebdriverIO - Cucumber framework</li>
+              <li>Able to work with Selenium and Playwright</li>
+              <li>SQL - Database Testing</li>
+              <li>API Testing - Postman</li>
+              <li>AI prompting</li>
+              <li>UI/UX</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
